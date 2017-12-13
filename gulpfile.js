@@ -15,7 +15,7 @@ gulp.task('remove-dist', function() {
 });
 
 gulp.task('css', function() {
-	return gulp.src('./source/scss/**/*.scss')
+	return gulp.src('./source/scss/style.scss')
 		.pipe(compileCSS())
 		.on('error', notify.onError({title:'erro ao compilar', message:'<%= error.message %>'}))
 		.pipe(minifyCSS())

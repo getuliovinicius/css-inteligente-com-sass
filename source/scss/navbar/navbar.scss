@@ -1,0 +1,33 @@
+@mixin navbarBase ($color, $bg-color, $border) {
+	min-height: 60px;
+	margin-bottom: 20px;
+	position: relative;
+	color: $color;
+	background-color: $bg-color;
+	border: $border;
+	font-weight: bold;
+}
+
+@mixin navbarItem ($float) {
+	height: auto;
+	margin: 0;
+	padding: 0;
+	display: block;
+	float: $float;
+	overflow: visible;
+	list-style: none;
+}
+
+%navbarHover {
+	color: #4b4b4b;
+	background: #eaeaea;
+}
+
+.navbar {
+	@include navbarBase(#640000, white, solid 2px #640000);
+	// @include navbarBase(#3e005e, white, solid 2px #3e005e);
+	// @include navbarBase(#003f00, white, solid 2px #003f00);
+}
+
+@import 'brand.scss';
+@import 'links.scss';

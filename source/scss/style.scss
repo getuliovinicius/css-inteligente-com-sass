@@ -1,3 +1,6 @@
 .color-title {
-	background-color: red;
+	color: red;
 }
+
+@import 'vars.scss';
+@import 'navbar/navbar.scss';

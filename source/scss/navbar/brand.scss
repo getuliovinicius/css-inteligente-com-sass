@@ -1,0 +1,13 @@
+.navbar-brand {
+	@include navbarItem(left);
+}
+
+.brand {
+	padding: $navbar-brand-padding;
+	float: left;
+	font-size: $navbar-brand-font;
+}
+
+.brand:hover{
+	@extend %navbarHover;
+}
